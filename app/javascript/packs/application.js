@@ -24,6 +24,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import { init_slick } from "./init_slick";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -31,4 +32,5 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  init_slick()
 });
