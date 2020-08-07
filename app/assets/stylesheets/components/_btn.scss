@@ -1,0 +1,13 @@
+.btn-black {
+  background: #292929;
+  padding: .8rem 2.2rem;
+  border-radius: .6rem;
+  color: white;
+  font-size: 2rem;
+  transition: 0.2s;
+  &:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,.85);
+  }
+}
