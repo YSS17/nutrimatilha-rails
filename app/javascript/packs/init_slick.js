@@ -15,6 +15,7 @@ require("slick-carousel")
 const init_slick = () => {
   $('.slick-modal').slick({
     infinite: false,
+    slidesToShow: 3
   });
 }
 
