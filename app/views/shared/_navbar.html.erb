@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-lg navbar-light navbar-lewagon fixed-top container-fluid">
+<div class="navbar navbar-expand-lg navbar-light navbar-lewagon container-fluid">
   <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag('nutrimatilha-logo.png')%>
   <% end %>
@@ -7,8 +7,8 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <%= link_to "Sobre", about_path, class: "nav-link nav-link" %>
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active">
