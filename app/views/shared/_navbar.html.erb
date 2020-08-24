@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-lg navbar-light navbar-lewagon container-fluid">
+<!-- <div class="navbar navbar-expand-lg navbar-light navbar-lewagon container-fluid">
   <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag('nutrimatilha-logo.png')%>
   <% end %>
@@ -32,4 +32,39 @@
       <% end %>
     </ul>
   </div>
-</div>
+</div> -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light navbar-lewagon container-fluid">
+  <%= link_to root_path, class: "navbar-brand" do %>
+  <%= image_tag('nutrimatilha-logo.png')%>
+  <% end %>
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <%= link_to "Home", root_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Feedbacks</a>
+      </li>
+      <li class="nav-item mr-2">
+        <%= link_to "Sobre", about_path, class: "nav-link" %>
+      </li>
+    </ul>
+    <ul class="navbar-nav float-right">
+      <% if user_signed_in? %>
+      <li class="nav-item dropdown">
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "Action", "#", class: "dropdown-item" %>
+          <%= link_to "Another action", "#", class: "dropdown-item" %>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+        </div>
+      </li>
+      <% else %>
+      <li class="nav-item">
+        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+      </li>
+      <% end %>
+    </div>
+  </nav>
