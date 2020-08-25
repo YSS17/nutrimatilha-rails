@@ -13,6 +13,12 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
 
       ## Rememberable
       t.datetime :remember_created_at
+      
+      ## Confirmable
+      t.string   :confirmation_token
+      t.datetime :confirmed_at
+      t.datetime :confirmation_sent_at
+      t.string   :unconfirmed_email # Only if using reconfirmable
 
       ## Trackable
       # t.integer  :sign_in_count, default: 0, null: false
@@ -21,12 +27,15 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       # t.inet     :current_sign_in_ip
       # t.inet     :last_sign_in_ip
 
+<<<<<<< HEAD
       # Confirmable
       t.string   :confirmation_token
       t.datetime :confirmed_at
       t.datetime :confirmation_sent_at
       t.string   :unconfirmed_email # Only if using reconfirmable
 
+=======
+>>>>>>> e6f2c6037f3a5291aedb4c7789442c751c85ce43
       ## Lockable
       # t.integer  :failed_attempts, default: 0, null: false # Only if lock strategy is :failed_attempts
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
