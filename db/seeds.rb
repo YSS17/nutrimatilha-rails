@@ -1,6 +1,7 @@
-## Creating all Breed instances
-
-puts "Creating all 151 breed instances. May take a while.."
+# Destroying all breed instances to not have repeated ones
+Breed.destroy_all
+# Creating all Breed instances
+puts "Creating all 152 breed instances. May take a while.."
 Breed.create!(name: 'Affenpinscher', size: 0, medium_weight: "3-4kg")
 Breed.create!(name: 'Bichon Frisé', size: 0, medium_weight: "2,5-3kg")
 Breed.create!(name: 'Bichon Havanês', size: 0, medium_weight: "3-5,5kg")
@@ -152,4 +153,5 @@ Breed.create!(name: 'Rafeiro do Alentejo', size: 4, medium_weight: "35-50kg")
 Breed.create!(name: 'São Bernardo', size: 4, medium_weight: "64-120kg")
 Breed.create!(name: 'Terra Nova', size: 4, medium_weight: "45-70kg")
 Breed.create!(name: 'Terrier Preto da Rússia', size: 4, medium_weight: "36-68kg")
-puts "Created all 151 breed instances!"
+Breed.create!(name: 'SRD')
+puts "Created all 152 breed instances!"
