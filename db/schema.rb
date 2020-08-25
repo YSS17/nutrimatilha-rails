@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2020_08_23_181104) do
   create_table "pets", force: :cascade do |t|
     t.string "name"
     t.string "sex"
-    t.string "size"
+    t.integer "size"
     t.date "date_birth"
     t.integer "weight"
     t.boolean "neutered"
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 2020_08_23_181104) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["breed_id"], name: "index_pets_on_breed_id"
+    t.index ["user_id"], name: "index_pets_on_user_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -78,11 +79,6 @@ ActiveRecord::Schema.define(version: 2020_08_23_181104) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_subscriptions_on_user_id"
-    t.integer "quantity"
-    t.bigint "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_products_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
