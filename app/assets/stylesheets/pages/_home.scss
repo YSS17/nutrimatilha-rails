@@ -4,9 +4,23 @@ header {
 }
 
 .banner {
-  padding-top: 58px;
-  width: 100%;
-  height: 85%;
+  .dog-bg-img{
+    display: inline;
+    float: right;
+    width: 900px;
+    height: 700px;
+    left: 90px;
+    top: -30px;
+  }
+  .call-to-action{
+    left: 5%;
+  }
+}
+
+.section-text{
+  text-align: center;
+  word-wrap: break-word;
+  width: 500px;
 }
 
 .home-content {
