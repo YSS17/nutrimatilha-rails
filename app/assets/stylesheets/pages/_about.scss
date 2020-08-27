@@ -4,6 +4,13 @@ body {
 // Bootstrap resets
 .card {
   border: none;
+  .card-title{
+    text-align: center;
+    margin: 25px;
+  }
+  .card-text{
+    padding:25px;
+  }
 }
 .card-img {
   border-radius: 0px;
@@ -62,7 +69,7 @@ body {
   }
 
   .card-about-body {
-    background-color: grey;
+    background-color: #A3C7D5;
     opacity: 0.6;
     flex: 3;
     padding: 0 0 0 1.25rem;
