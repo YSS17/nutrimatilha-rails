@@ -17,6 +17,28 @@ header {
   }
 }
 
+.sec-2-dog{
+  height: 350px;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 0.5px black;
+  float: right;
+}
+
+.sec-3-dog {
+  height: 350px;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 0.5px black;
+  float: left;
+}
+
+.img-food{
+  height: 100px;
+  width: 100px;
+  justify-content: space-between;
+}
+
 .section-text{
   text-align: center;
   word-wrap: break-word;
