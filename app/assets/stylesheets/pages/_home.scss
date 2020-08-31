@@ -33,6 +33,18 @@ header {
   float: left;
 }
 
+
+.about-container {
+  margin-top: 150px;
+  margin-left: 80px;
+  text-align: center;
+  .product-info{
+    background-color: rgb(155, 191, 205);
+    border-radius: 40px;
+    padding: 50px;
+  }
+}
+
 .img-food{
   height: 100px;
   width: 100px;
